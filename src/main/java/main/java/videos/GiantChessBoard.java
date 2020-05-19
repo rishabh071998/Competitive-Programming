@@ -49,10 +49,10 @@ public class GiantChessBoard {
     public static long[] generateFactorials(int count) {
         long[] result = new long[count];
         result[0] = 1;
-        for (int i = 1; i < count; i++) {
+        for (int i = 1; i < count; i+2) {
             result[i] = (result[i - 1] * i) % mod;
         }
-        return result;
+        return result ;
     }
 
     public static long[] generateReverseFactorials(int upTo) {
